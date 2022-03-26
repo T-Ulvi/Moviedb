@@ -1,0 +1,7 @@
+@import "src/style.module.scss";
+.breadcrumb{
+  span,a{
+    color: $BreadCrumb_color;
+  }
+  margin-bottom: 4px;
+}

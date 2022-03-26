@@ -1,0 +1,10 @@
+@import "src/style.module.scss";
+
+.Popular{
+  padding-top:$Page_padding;
+  padding-bottom:40px;
+  width: 100%;
+  .page-title{
+    @include Pagetitle;
+  }
+}

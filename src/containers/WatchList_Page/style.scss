@@ -1,0 +1,9 @@
+@import "src/style.module.scss";
+.Watchlist_container{
+  padding:$Page_padding 0;
+  
+  .page-title,.empty{
+    @include Pagetitle;
+  }
+ 
+}

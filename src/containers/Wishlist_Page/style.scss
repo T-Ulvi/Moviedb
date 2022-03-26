@@ -1,0 +1,9 @@
+@import "src/style.module.scss";
+.Wislistcontainer{
+  padding:$Page_padding 0;
+  
+  .page-title,.empty{
+    @include Pagetitle;
+  }
+ 
+}

@@ -1,0 +1,116 @@
+@import "src/style.module.scss";
+
+.Detail-Background {
+  height: 480px;
+  position: relative;
+  img {
+    @include FullImg;
+    border-radius: 40px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(54, 44, 146, 0.4) 0%,
+      rgba(18, 98, 151, 0.4) 100%
+    );
+    border-radius: 40px;
+  }
+  .Detail-title {
+    background: rgba(32, 40, 62, 0.8);
+    backdrop-filter: blur(24px);
+    border-radius: 24px;
+    padding: 20px 10px 20px 40px;
+    transform: translate($DetailPage_margin, -50%);
+
+    h1 {
+      color: $Detail-title-color;
+      margin: 0;
+      font-size: 32px;
+    }
+  }
+}
+
+.Details-more {
+  width: 100%;
+  transform: translateY(140px);
+  .Detail-img {
+    height: 720px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-left: 5px;
+    img {
+      @include FullImg;
+    }
+  }
+  .Detail-text {
+    padding: 0 12px;
+    h2 {
+      color: $Detail-title-color;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .overview {
+      font-size: 20px;
+      line-height: 32px;
+      color: $Default_color;
+      margin-bottom: 24px;
+    }
+  }
+  .icon_row {
+    .star {
+      display: inline-block;
+      @include Icons;
+      margin-bottom: 24px;
+      i {
+        margin-right: 6px;
+      }
+    }
+
+    .heart,
+    .watchList {
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 5px;
+      i {
+        transition: 0.4s;
+      }
+      &:hover i {
+        transform: scale(1.2);
+      }
+      @include Icons;
+    }
+  }
+  .DetailUl {
+    padding: 0;
+
+    li {
+      margin-bottom: 24px;
+      p {
+        font-size: 16px;
+        color: #767e94;
+        margin-bottom: 8px;
+      }
+      h3 {
+        color: $Default_color;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.recommended_row {
+  padding-top: 200px;
+  h1 {
+    color: $Default_color;
+    text-align: center;
+    font-size: 32px;
+  }
+}
